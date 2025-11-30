@@ -1,0 +1,2 @@
+- [starting SquashTM in Docker in WSL2](./docker.md)
+- [declaring a Vertex AI model as a custom AI server in SquashTM](./vertex.md)
