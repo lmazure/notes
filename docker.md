@@ -16,3 +16,13 @@ in the first window
 - type Ctrl-C
 - `docker compose start`
 - `docker compose logs --follow`
+
+to set the secret for JWT tokens:
+- ```sh
+  docker exec -it tmp-squash-tm-1 sh
+  cd /opt/squash-tm/conf
+  vi squash.tm.cfg.properties
+  ```
+- uncomment and set the value for the line `#squash.rest-api.jwt.secret =` (this must really be a real base-64 encoded long string)
+- save the file, exit vi
+- exit the shell
