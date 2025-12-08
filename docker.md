@@ -23,6 +23,6 @@ to set the secret for JWT tokens:
   cd /opt/squash-tm/conf
   vi squash.tm.cfg.properties
   ```
-- uncomment and set the value for the line `#squash.rest-api.jwt.secret =` (this must really be a real base-64 encoded long string)
+- uncomment and set the value for the line `#squash.rest-api.jwt.secret =` (this must really be a real base-64 encoded long string, e.g. using https://www.base64encode.org/)
 - save the file, exit vi
 - exit the shell
