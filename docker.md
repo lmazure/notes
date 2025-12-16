@@ -1,26 +1,22 @@
-# start SquashTM
+# Start SquashTM
 - create the file `docker-compose.yml` using the content of https://tm-en.doc.squashtest.com/v12/install-guide/installation/install-squash/docker-install.html
 - `docker compose up`
 - log in http://localhost:8090/squash
 
-# set the lience filke
+# install some plugins and the licence file
 in another window
 - ```sh
   docker exec -it squashtm sh
   cd /opt/squash-tm/plugin-files/squash-tm-premium/squash.tm.premium-12.0.0.RELEASE/plugins
   cp squash.tm.premium-12.0.0.RELEASE.jar /opt/squash-tm/plugins
+  cd /opt/squash-tm/plugin-files/api-rest-admin/api.rest.admin-12.0.0.RELEASE/plugins
+  cp api.rest.admin-12.0.0.RELEASE.jar /opt/squash-tm/plugins
   mkdir /opt/squash-tm/plugins/license
   exit
   ```
 - `docker cp /mnt/c/Users/lmazure/Documents/docs/running/licence\ Squash\ TM/1751615543316_Ultimate.l4j squashtm:/opt/squash-tm/plugins/license/squash-tm.lic`
 
-# restart SquashTM
-in the first window
-- type Ctrl-C
-- `docker compose start`
-- `docker compose logs --follow`
-
-#  set the secret for JWT tokens
+#  Set the secret for JWT tokens
 - ```sh
   docker exec -it squashtm sh
   cd /opt/squash-tm/conf
@@ -35,3 +31,11 @@ other option, if I have a copy of the `squash.tm.cfg.properties` file in the cur
 docker cp squash.tm.cfg.properties squashtm://opt/squash-tm/conf/squash.tm.cfg.properties
 ```
 
+# Restart SquashTM
+in the first window
+- type Ctrl-C
+- `docker compose start`
+- `docker compose logs --follow`
+
+# Login SquashTM
+- log on http://localhost:8090/squash/login
