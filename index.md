@@ -1,4 +1,5 @@
 - [starting SquashTM in Docker in WSL2](./docker.md)
 - [declaring a Vertex AI model as a custom AI server in SquashTM](./vertex.md)
 - [declaring an Azure OpenAI model as a custom AI server in SquashTM](./azure.md)
-- [Handlebar.java syntax](./handlebars.md)
+- [some notes on using SquashTM REST API](./rest-api.md)
+- [some notes on using SoapUI](./soapui.md)
