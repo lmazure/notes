@@ -7,10 +7,10 @@
 in another window
 - ```sh
   docker exec -it squashtm sh
-  cd /opt/squash-tm/plugin-files/squash-tm-premium/squash.tm.premium-12.0.0.RELEASE/plugins
-  cp squash.tm.premium-12.0.0.RELEASE.jar /opt/squash-tm/plugins
-  cd /opt/squash-tm/plugin-files/api-rest-admin/api.rest.admin-12.0.0.RELEASE/plugins
-  cp api.rest.admin-12.0.0.RELEASE.jar /opt/squash-tm/plugins
+  cd /opt/squash-tm/plugin-files/squash-tm-premium/squash.tm.premium-13.0.1.RELEASE/plugins
+  cp squash.tm.premium-13.0.1.RELEASE.jar /opt/squash-tm/plugins
+  cd /opt/squash-tm/plugin-files/api-rest-admin/api.rest.admin-13.0.0.RELEASE/plugins
+  cp api.rest.admin-13.0.0.RELEASE.jar /opt/squash-tm/plugins
   mkdir /opt/squash-tm/plugins/license
   exit
   ```
