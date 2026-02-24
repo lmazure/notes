@@ -1,9 +1,9 @@
 # Start SquashTM
-- create the file `docker-compose.yml` using the content of https://tm-en.doc.squashtest.com/v12/install-guide/installation/install-squash/docker-install.html
+- create the file `docker-compose.yml` using the content of https://tm-en.doc.squashtest.com/v13/install-guide/installation/install-squash/docker-install.html#quick-start
 - `docker compose up`
-- log in http://localhost:8090/squash
+- log in http://localhost:8090/squash/login (admin/admin)
 
-# install some plugins and the licence file
+# install some plugins and the license file
 in another window
 - ```sh
   docker exec -it squashtm sh
@@ -26,7 +26,7 @@ in another window
 - save the file, exit `vi`
 - exit the shell
 
-other option, if I have a copy of the `squash.tm.cfg.properties` file in the current folfer:
+other option, if you have a copy of the `squash.tm.cfg.properties` file (corresponding to the 13.0.1 release!) in the current folder:
 ```sh
 docker cp squash.tm.cfg.properties squashtm://opt/squash-tm/conf/squash.tm.cfg.properties
 ```
@@ -34,8 +34,10 @@ docker cp squash.tm.cfg.properties squashtm://opt/squash-tm/conf/squash.tm.cfg.p
 # Restart SquashTM
 in the first window
 - type Ctrl-C
-- `docker compose start`
-- `docker compose logs --follow`
+- ```sh
+  docker compose start
+  docker compose logs --follow
+  ```
 
 # Login SquashTM
 - log on http://localhost:8090/squash/login
