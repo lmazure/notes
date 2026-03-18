@@ -1,8 +1,10 @@
 - [starting SquashTM in Docker in WSL2](./docker.md)
-- AI
+- AI in SquashTM
     - [declaring a Vertex AI model as a custom AI server in SquashTM](./vertex.md)
     - [declaring an Azure OpenAI model as a custom AI server in SquashTM](./azure.md)
     - [declaring an OpenAI model as a custom AI server in SquashTM](./openai_as_custom.md)
     - [declaring a Hugging Face model as a custom AI server in SquashTM](./hugging_face.md)
+- Using AI for dev
+    - [levels of AI usage](./ai_dev_usage_levels.md)
 - [some notes on using SquashTM REST API](./rest-api.md)
 - [some notes on using SoapUI](./soapui.md)
